@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video-final" style="display: none; position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1; object-fit: cover; opacity: 0; transition: opacity 2s ease-in-out;">
+  <source src="https://www.dropbox.com/scl/fi/b4xh5v9bpy7zq7wo8k95k/Untitled-video-Made-with-Clipchamp-5.mp4?rlkey=1v82dwpdsoiki9oovfy2rks41&raw=1" type="video/mp4">
+</video>
+
+<div id="heart-container"></div>
+
+<div id="envelope-wrapper" class="envelope-container" onclick="openEnvelope()">
+  <div class="envelope">
+    <div class="wax-seal">Kai</div>
+    <div class="flap"></div>
+    <div class="front"></div>
+  </div>
+  <div class="instruction-text">Tap to Open Your Heart ❤</div>
+</div>
+
+<div id="invitation-letter" class="letter-card">
+  <div class="photo-column side-left">
+      <div class="photo-frame"><img src="https://www.dropbox.com/scl/fi/6ombefiadebw8rwsi05gz/IMG_726.jpg?rlkey=q8u625sd3jmry4h7qg2yamji6&raw=1"></div>
+      <div class="photo-frame"><img src="https://www.dropbox.com/scl/fi/3tniq3c0y23f195y94mi0/IMG_0928.jpg?rlkey=rrw7xvuu63f07f93cbal8djkt&raw=1"></div>
+      <div class="photo-frame"><img src="https://www.dropbox.com/scl/fi/adhnbec9zboj51o86mqak/IMG_1460.jpg?rlkey=9pvn7aofvsygyl3b27f8g99gk&raw=1"></div>
+  </div>
+  <div class="photo-column side-right">
+      <div class="photo-frame"><img src="https://www.dropbox.com/scl/fi/y7w0ubmwvpmikyzyb5nfo/IMG_6723.jpg?rlkey=pweovla3uu6i2r4ywqsj9u409&raw=1"></div>
+      <div class="photo-frame"><img src="https://www.dropbox.com/scl/fi/dcd8g3l229z3z9w31mhyb/IMG_6992.jpg?rlkey=e8eb7l3yorr499rznboppy39a&raw=1"></div>
+      <div class="photo-frame"><img src="https://www.dropbox.com/scl/fi/pbwr0tw5dum84yzt1uyuh/IMG_7162.jpg?rlkey=d6wujrao5arhw00x85g7j9xc4&raw=1"></div>
+  </div>
+
+  <div class="letter-inner">
+    <h2 class="script-title">My Dearest Luv,</h2>
+    <p class="body-text">
+      Kai from the moment you walked into my life, every day has been a beautiful chapter filled with love and the sweetest memories.
+    </p>
+    <div class="divider">❤</div>
+    <div class="info-box">
+      <p class="event-name">Join me as we celebrate our first year of love</p>
+      <p class="date-time">March 21, 2026 • 5:00 PM</p>
+      <p class="venue">📍 Hidden Garden Cafe</p>
+    </div>
+    <button class="action-btn" onclick="confirmDate()">Confirm Date? ❤</button>
+  </div>
+</div>
+
+<div id="final-stage" style="display: none; text-align: center;">
+  <div id="confirmation-letter" class="letter-card" style="display: block; margin: 0 auto 30px;">
+    <div class="letter-inner">
+      <h2 class="script-title-final">Date Confirmed!</h2>
+      <div class="divider">❤</div>
+      <p class="body-text-final">
+        It's a date! I can't wait to celebrate every second of our first year with you. <br>
+        I love you Kai!
+      </p>
+    </div>
+  </div>
+
+  <div id="big-timer-container">
+    <div class="timer-label">TIME UNTIL OUR ANNIVERSARY CELEBRATION</div>
+    <div id="timer-display">00d : 00h : 00m : 00s</div>
+    
+    <div class="heart-lock-container">
+        <button id="secret-heart-btn" class="heart-btn" onclick="checkDateUnlock()">Click Me ❤</button>
+        <div id="lock-timer" class="lock-countdown"></div>
+    </div>
+  </div>
+</div>
+
+<div id="third-stage" style="display: none; overflow-y: auto; max-height: 90vh; padding: 20px;">
+    <div class="letter-card romantic-long-letter" style="display: block; margin: 0 auto; max-width: 650px;">
+        <div class="letter-inner">
+            <h2 class="script-title">Happy 1st Anniversary, Luv!</h2>
+            <div class="divider">❤❤❤</div>
+            <div class="romantic-text">
+                <p>1 year na tayo and honestly, it’s been the best year of my life. Thank you for staying by my side through everything—sa mga tawa, sa mga asaran, at kahit sa mga times na hindi tayo magkaintindihan at nagkakapikunan tayo (lakas mo kasi mang-inis HAHAHA), pero yun nga, nandiyan ka pa rin. I love you so much!</p>
+                
+                <p>Sana road to forever na talaga 'to and walang iwanan, ha? Mahal na mahal talaga kita and I can't imagine my world without you—baka mabaliw ako niyan, sige ka! You are my safe place and my best friend all in one. Sa totoo lang, ikaw lang ang nakikita kong makakasama ko pagtanda (pero mauuna ako kasi 25 na ako eh HAHAHAHA). Ikaw lang ang gusto kong pakasalan, tandaan mo 'yan. At pangako ko sa'yo, hinding-hindi kita iiwan o lolokohin. Kahit anong mangyari, kakayanin natin basta magkasama tayo.</p>
+                
+                <p>I promise to be more patient, to listen more, and to always choose you every single day. Thank you for accepting all my flaws and for loving me for who I am. Ikaw ang pahinga ko sa magulong mundo, and I promise to be your protector and your constant through it all.</p>
+                
+                <p>I’m so excited for all the travels, the food trips, and even the simple moments na magkatabi lang tayo. Thank you for making me the happiest person this past year. I promise to be better for you every single day. Happy 1st Anniversary, Luv! Cheers to a lifetime of 'us'!</p>
+                
+                <div class="divider">❤</div>
+                <p class="ps-text">
+                    <strong>PS:</strong> 'Wag mong kakalimutan yung date natin sa March 21! Gusto ko magmukha kang Disney Princess wag lang si Fiona. Sana nagustuhan mo rin yung ginawa kong kanta pag hindi iyak na lang ako, at sana nagustuhan mo rin ginawa kong website sumakit ulo ko HAHAHAHA. Tagal tagal ko tong ginawa! Kung tutuusin may Canva naman, pero gusto ko effort talaga ikaw na yan eh! cute ko ba mag mahal? HAHAHAHA. I love you Baby BOTCHOG!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<audio id="bgMusic" loop><source src="https://www.dropbox.com/scl/fi/xgvx479rqmh8refwkdu0q/easy.mp3?rlkey=an4hycmujdife5ujhcyc0myun&raw=1" type="audio/mpeg"></audio>
+<audio id="finalMusic" loop><source src="https://www.dropbox.com/scl/fi/hrbxg8dmpcz6q40smfypj/Sa-mundo-ng-laro-kung-saan-lahat-ay-peke-2.mp3?rlkey=ih67yxkiovfdjg9jri9csghbn&raw=1" type="audio/mpeg"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
 
